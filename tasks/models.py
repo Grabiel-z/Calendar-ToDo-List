@@ -20,7 +20,9 @@ class Task(models.Model):
     completed_date = models.DateField(null=True, blank=True)
     status = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
-    team = models.ForeignKey(Team, on_delete=models.CASCADE, related_name="tasks")
+    team = models.ForeignKey(
+        Team, on_delete=models.CASCADE, related_name="tasks", null=True, blank=True
+    )
 
 
 class Subtask(models.Model):
