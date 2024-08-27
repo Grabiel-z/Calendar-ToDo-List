@@ -38,9 +38,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # External
     "corsheaders",
     "rest_framework",
     "rest_framework.authtoken",
+    # Apps
     "superlist",
     "tasks",
     "users",
